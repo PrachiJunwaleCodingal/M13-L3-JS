@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Test Methods in JS</title>
+</head>
+
+<body>
+    <p>The test() method returns true if it finds a match, otherwise it returns false.</p>
+
+    <button onclick="fun()">Search word- Hello</button>
+    <p id="id1"></p>
+    <script>
+        function fun() {
+            var str = "Hello Everyone, welcome to class";
+            var patt = new RegExp("Hello");  //pattern will search word
+            var res = patt.test(str);
+            document.getElementById("id1").innerHTML = res;
+        }
+    </script>
+</body>
+
+</html>

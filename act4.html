@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Switch</title>
+</head
+<body>
+    <h2> Current Day and Time</h2>
+    <script>
+    
+        var day= new Date().getDay(); //current day 
+    
+        var d = new Date();
+        d.getFullYear();
+
+        switch (day) {
+            case 0:
+                day = "Sunday";
+                break;
+            case 1:
+                day = "Monday";
+                break;
+            case 2:
+                day = "Tuesday";
+                break;
+            case 3:
+                day = "Wednesday";
+                break;
+            case 4:
+                day = "Thursday";
+                break;
+            case 5:
+                day = "Friday";
+                break;
+            case 6:
+                day = "Saturday";
+        }
+        document.write("Its a " + day);
+        document.write("<br>");
+        document.write("<br>");
+        document.write("Details: " + d);
+    </script>
+
+</body>
+
+</html>
